@@ -90,13 +90,13 @@ export function Testimonials() {
           </Reveal>
 
           {/* Quote cards, pinned to the outer columns --------------------- */}
-          <QuoteCard item={testimonials[0]} delay={0} className="lg:col-start-1 lg:row-start-1" />
+          {/* <QuoteCard item={testimonials[0]} delay={0} className="lg:col-start-1 lg:row-start-1" />
           <QuoteCard item={testimonials[1]} delay={0.1} className="lg:col-start-3 lg:row-start-1" />
           <QuoteCard item={testimonials[2]} delay={0} className="lg:col-start-1 lg:row-start-3" />
-          <QuoteCard item={testimonials[3]} delay={0.1} className="lg:col-start-3 lg:row-start-3" />
+          <QuoteCard item={testimonials[3]} delay={0.1} className="lg:col-start-3 lg:row-start-3" /> */}
 
           {/* Scattered snapshots — decorative, desktop only ---------------- */}
-          <Snap
+          {/* <Snap
             snap={testimonialSnaps[0]}
             className="hidden h-36 w-44 justify-self-center lg:col-start-2 lg:row-start-1 lg:block"
           />
@@ -111,7 +111,7 @@ export function Testimonials() {
           <Snap
             snap={testimonialSnaps[3]}
             className="hidden h-32 w-40 justify-self-center lg:col-start-2 lg:row-start-3 lg:block"
-          />
+          /> */}
         </div>
       </Frame>
     </section>

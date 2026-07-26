@@ -76,8 +76,8 @@ function ServiceCard({ service, isActive, onActivate }) {
         className={cn(
           "absolute inset-0 transition-all duration-500",
           isActive
-            ? "bg-gradient-to-b  to-[#000000]"
-            : "bg-gradient-to-t from-black/90 via-black/40 to-transparent",
+            ? "md:bg-gradient-to-b  md:to-[#000000]"
+            : "md:bg-gradient-to-t md:from-black/90 md:via-black/40 md:to-transparent",
         )}
       />
 

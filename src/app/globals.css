@@ -279,3 +279,47 @@ body {
 body{
   font-family: 'Outfit';
 }
+
+/* Ensure parent is the positioning boundary */
+
+
+/* Container anchored to the right side */
+.hero-images-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 45%; /* Adjust width to fit your layout */
+  pointer-events: none; /* Allows clicks to pass through empty space */
+}
+
+/* Base image styles */
+.hero-img {
+  position: absolute;
+  width: 320px;       /* Adjust default image width */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Optional subtle shadow */
+  object-fit: cover;
+  pointer-events: auto;
+}
+
+/* 1. Top Image - Anchored right, aligned higher up */
+.hero-img-top {
+  top: 10%;
+  right: 0;
+  z-index: 1;
+}
+
+/* 2. Middle Image - Offset down and shifted further RIGHT (overflowing/clipped) */
+.hero-img-middle {
+  top: 38%;
+  right: -80px; /* Negative right margin pushes it off-screen to match screenshot */
+  z-index: 2;
+}
+
+/* 3. Bottom Image - Anchored right, placed near the bottom */
+.hero-img-bottom {
+  bottom: 5%;
+  right: 0;
+  z-index: 1;
+}

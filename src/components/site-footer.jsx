@@ -89,7 +89,7 @@ export function SiteFooter() {
         </div>
 
         {/* Link columns ------------------------------------------------- */}
-        <div className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
+        {/* <div className="grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
           {footer.columns.map((column) => (
             <div key={column.heading}>
               <h3 className="label-sm text-white/45">{column.heading}</h3>
@@ -105,9 +105,12 @@ export function SiteFooter() {
             </div>
           ))}
 
+
+          <Newsletter />
+        </div> */}
           <div>
             <h3 className="label-sm text-white/45">Social</h3>
-            <ul className="mt-4 flex gap-2.5">
+            <ul className="m-4 flex gap-2.5">
               {socials.map(({ name, Icon, href }) => (
                 <li key={name}>
                   <a
@@ -121,9 +124,6 @@ export function SiteFooter() {
               ))}
             </ul>
           </div>
-
-          <Newsletter />
-        </div>
 
         {/* Legal -------------------------------------------------------- */}
         <div className="label-sm flex flex-wrap items-center justify-between gap-4 border-t border-white/12 pt-6 text-white/80">

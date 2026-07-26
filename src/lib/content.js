@@ -22,12 +22,12 @@ export const navLinks = [
 ];
 
 export const contact = {
-  phone: "(238) 996-5758",
-  email: "hellosansbrothers",
-  city: "Ponorogo",
+  phone: "0700809559",
+  email: "mohamedabdiaziz515@gmail.com",
+  city: "Nairobi , Kenya",
   address: ["73 Market St", "Venice, CA 90291", "United States"],
-  footerPhone: "(+62) 8700 0222 098",
-  footerAddress: "Ponorogo 456, Indonesia",
+  footerPhone: "0700809559",
+  footerAddress: "Nairobi , Kenya",
 };
 
 export const hero = {
@@ -229,8 +229,8 @@ export const projectGroups = [
 ];
 
 export const testimonialsIntro = {
-  heading: ["Stories from", "our happy clients"],
-  sub: "Discover how we've helped brands grow through strategy, design, and innovation.",
+  heading: ["Stories from", "My happy clients"],
+  sub: "Discover how I've helped brands grow through strategy, design, and innovation.",
 };
 
 /**
@@ -251,22 +251,22 @@ export const testimonials = [
   {
     quote:
       "We were a spreadsheet and a phone number. Abdiaziz gave us a name, a look and a site that finally made us seem as capable as we are — enquiries tripled in the first quarter.",
-    name: "Sarah Lim",
-    role: "Founder, Northsend Logistics",
+    name: "Yahya Mohamed",
+    role: "Zula Cafe",
     tone: "lilac",
   },
   {
     quote:
       "Nobody could tell what we actually sold. Six weeks later we had positioning our own sales team could repeat, and we closed two enterprise deals that had stalled for a year.",
-    name: "Jonathan Reyes",
-    role: "CEO, Fernwood Supply",
+    name: "Zayn Abdullahi",
+    role: "Brand Face at zula",
     tone: "tangerine",
   },
   {
     quote:
       "Our old site was a brochure nobody read. The rebuild turned it into the thing that sells for us — we went from zero inbound to a booked-out calendar in four months.",
-    name: "Kevin Lau",
-    role: "Managing Director, Halstead Interiors",
+    name: "Yussuf Hassan",
+    role: "Lenzro",
     tone: "deepsea",
   },
   {
@@ -305,7 +305,7 @@ export const footer = {
     {
       heading: "Support",
       links: [
-        "Contact Us",
+        "Contact Me",
         "FAQs",
         "Pricing & Packages",
         "Terms & Policies",

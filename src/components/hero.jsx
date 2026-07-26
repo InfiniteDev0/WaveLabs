@@ -50,6 +50,19 @@ export function Hero() {
         <div className="relative pt-16 pb-10 sm:pt-24 sm:pb-16">
           <ColumnGrid />
 
+          <div class="hidden md:absolute right-0 bottom-10 space-y-20 space-x-20">
+            <img src="/creativity/3.png" alt="" className=" w-40 rotate-45"  />
+            <img
+              src="/creativity/1.png"
+              alt=""
+              className="-rotate-45 w-40"
+            />
+          </div>
+
+          <div className="absolute w-18 md:w-50 left-10 md:left-22">
+            <img src="/idea.svg" alt="" />
+          </div>
+
           <h1 className="display-hero relative text-center">
             <span className="block rise-in">{brand.tagline[0]}</span>
             <span className="relative block rise-in [animation-delay:120ms]">
@@ -80,9 +93,7 @@ export function Hero() {
               <span className="block text-sm font-semibold">
                 {hero.founder.name}
               </span>
-              <span className="block text-smoke">
-                {hero.founder.role}
-              </span>
+              <span className="block text-smoke">{hero.founder.role}</span>
             </span>
           </Reveal>
 
