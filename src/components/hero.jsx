@@ -48,15 +48,11 @@ export function Hero() {
       <Frame>
         {/* Headline ---------------------------------------------------- */}
         <div className="relative pt-16 pb-10 sm:pt-24 sm:pb-16">
-          <ColumnGrid />
+          {/* <ColumnGrid /> */}
 
-          <div class="hidden md:absolute right-0 bottom-10 space-y-20 space-x-20">
-            <img src="/creativity/3.png" alt="" className=" w-40 rotate-45"  />
-            <img
-              src="/creativity/1.png"
-              alt=""
-              className="-rotate-45 w-40"
-            />
+          <div className="hidden md:absolute right-0 bottom-10 space-y-20 space-x-20">
+            <img src="/creativity/3.png" alt="" className=" w-40 rotate-45" />
+            <img src="/creativity/1.png" alt="" className="-rotate-45 w-40" />
           </div>
 
           <div className="absolute w-18 md:w-50 left-10 md:left-22">
@@ -90,7 +86,7 @@ export function Hero() {
               className="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-white"
             />
             <span>
-              <span className="block text-sm font-semibold">
+              <span className="block display-md text-lg">
                 {hero.founder.name}
               </span>
               <span className="block text-smoke">{hero.founder.role}</span>
@@ -112,7 +108,7 @@ export function Hero() {
             className="flex items-start gap-4 border-t border-hairline py-6 sm:col-span-2 sm:border-t lg:col-span-1 lg:border-t-0 lg:border-l lg:border-hairline lg:pl-8"
           >
             <span>
-              <span className="block text-xl font-semibold">
+              <span className="block  block display-md text-lg">
                 {hero.promo.heading}
               </span>
               <span className="mt-1 block text-sm leading-relaxed text-smoke">

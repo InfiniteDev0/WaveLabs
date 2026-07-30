@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
  */
 export function Frame({ as: Tag = "div", className, children }) {
   return (
-    <Tag className={cn("shell border-x border-hairline", className)}>
+    <Tag className={cn("shell", className)}>
       {children}
     </Tag>
   );

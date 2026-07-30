@@ -82,7 +82,6 @@ export function Testimonials() {
           <Reveal className="lg:col-span-3 lg:col-start-1 lg:row-start-2">
             <h2 className="display-xl text-center">
               <span className="block">{testimonialsIntro.heading[0]}</span>
-              <span className="block">{testimonialsIntro.heading[1]}</span>
             </h2>
             <p className="label-sm mt-4 text-center opacity-80">
               {testimonialsIntro.sub}

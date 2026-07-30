@@ -20,7 +20,7 @@ export function Wordmark({ className = "", markClass = "text-[#7c3aed]" }) {
   return (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <BrandMark className={`h-6 w-6 shrink-0 ${markClass}`} />
-      <span className="text-xl font-semibold uppercase tracking-tight">Wave</span>
+      <span className="text-xl font-semibold text-black uppercase tracking-tight">Wave</span>
     </span>
   );
 }

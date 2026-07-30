@@ -17,7 +17,7 @@ export const brand = {
 export const navLinks = [
   { label: "Vision", href: "#vision" },
   { label: "Services", href: "#services" },
-  { label: "Strategy and Resources", href: "#services" },
+  { label: "My Work", href: "#work" },
   { label: "Success Stories", href: "#footer" },
 ];
 
@@ -114,9 +114,8 @@ export const statSlides = [
 ];
 
 export const servicesIntro = {
-  heading: ["Services aren't offered.", "They're crafted."],
-  eyebrow: "Services",
-  viewAll: "View All",
+  heading: ["What i do", "is crafted for you."],
+  eyebrow: "Your needs",
 };
 
 export const services = [
@@ -171,65 +170,120 @@ export const services = [
   },
 ];
 
-export const projectGroups = [
+export const SECTIONS_DATA = [
   {
-    tag: "Strategy",
-    image: "/strategy.png",
-    alt: "Two strategists annotating a printed floor plan together",
-    items: [
+    id: "brand",
+    title: "Brand Strategy",
+    description:
+      "Build a strong foundation before you invest in design or marketing.",
+    cards: [
       {
-        title: "UX Researcher",
-        body: "We interview the people who actually use the product, then turn the transcripts into a decision map the whole team can argue with.",
+        number: "01",
+        title: "Brand Research",
+        description:
+          "Research your audience, competitors, and market opportunities to position your business for long-term success.",
+         imgSrc: "/brand.png",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/03/Branding.mp4",
+        imgSrc: "/reasearch.png",
       },
       {
-        title: "Market Positioning",
-        body: "Where you sit against everyone else, said in one sentence your sales team can repeat without reading it off a slide.",
-      },
-      {
-        title: "Content Planning",
-        body: "A calendar built around the questions your buyers are already typing, not around the channels that are easiest to fill.",
-      },
-      {
-        title: "Brand Voice & Personality",
-        body: "Tone rules with real before-and-after examples, so writing on-brand stops depending on who happens to be writing.",
-      },
-      {
-        title: "Competitive Analysis",
-        body: "A teardown of the five brands you keep losing to, and the specific gaps worth taking from each of them.",
+        number: "02",
+        title: "Product Discovery",
+        description:
+          "We make your brand easy to find — from Google Maps listings and social media creation to professional contact emails and targeted advertising.",
+         imgSrc: "/brand.png",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/Product-discovery.mp4",
+        imgSrc: "/brand.png",
       },
     ],
   },
+
   {
-    tag: "Creative Design",
-    image: "/creativity.png",
-    alt: "Designer working on colourful layout comps at a desktop workstation",
-    items: [
+    id: "evolve",
+    title: "Brand Evolution",
+    description:
+      "Refresh your brand as your business grows and reaches new markets.",
+    cards: [
       {
-        title: "Logo & Identity Design",
-        body: "A mark that survives being shrunk to a favicon, embroidered on a cap, and animated in a title sequence.",
+        number: "01",
+        title: "Brand Identity and Design",
+        description:
+          "Develop a distinctive visual identity, messaging, and personality that customers instantly recognize.",
+         imgSrc: "/identity.jpg",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/UX-audit.mp4",
+      },
+    ],
+  },
+
+  {
+    id: "reach",
+    title: "Digital Presence",
+    description:
+      "Launch the digital experiences that help your business reach more customers.",
+    cards: [
+      {
+        number: "01",
+        title: "Website Development",
+        description:
+          "Design and build high-performing marketing websites, web apps, and SaaS platforms tailored to your business.",
+         imgSrc: "/eas.png",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/cab5f51f-a135-4777-8895-398644445757.mp4",
       },
       {
-        title: "UI/UX Design",
-        body: "Flows, states and edge cases drawn out in full — handed over as a component library your engineers can build straight from.",
+        number: "01",
+        title: "Website Redesign",
+        description:
+          "Modernize outdated websites with improved user experience, accessibility, performance, and conversion-focused design.",
+         imgSrc: "/red.png",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/cab5f51f-a135-4777-8895-398644445757.mp4",
       },
       {
-        title: "Marketing Collateral",
-        body: "Decks, one-pagers and social kits templated so the tenth one looks as considered as the first.",
+        number: "03",
+        title: "Mobile App Development",
+        description:
+          "Create responsive Android and iOS applications that deliver seamless experiences across devices.",
+         imgSrc: "/mobile.jpg",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/cab5f51f-a135-4777-8895-398644445757.mp4",
+      },
+    ],
+  },
+
+  {
+    id: "voice",
+    title: "Brand Voice",
+    description:
+      "Tell your story through compelling content and creative direction.",
+    cards: [
+      {
+        number: "01",
+        title: "Content Strategy",
+        description:
+          "Plan content that educates, engages, and converts your audience across every digital platform.",
+         imgSrc: "/make.jpg",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/UX-audit.mp4",
       },
       {
-        title: "Branding & Identity",
-        body: "Colour, type, photography and motion locked into a system with enough room left for the brand to keep growing.",
-      },
-      {
-        title: "Graphic Assets",
-        body: "Icons, illustration and pattern libraries drawn on one grid, exported in every format your team will ask for.",
+        number: "02",
+        title: "Creative Direction",
+        description:
+          "Guide photography, video, campaigns, and visual storytelling to ensure every touchpoint reflects your brand.",
+         imgSrc: "/create.jpg",
+          videoSrc:
+          "https://cdn.phenomenonstudio.com/wp-content/uploads/2025/02/cab5f51f-a135-4777-8895-398644445757.mp4",
       },
     ],
   },
 ];
 
 export const testimonialsIntro = {
-  heading: ["Stories from", "My happy clients"],
+  heading: ["Currently Working with"],
   sub: "Discover how I've helped brands grow through strategy, design, and innovation.",
 };
 

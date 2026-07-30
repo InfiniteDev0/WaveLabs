@@ -22,6 +22,14 @@ const tanker = localFont({
   display: "swap",
 });
 
+const clash = localFont({
+  src: "../../public/Fonts/WEB/fonts/ClashDisplay-Regular.woff2",
+  variable: "--font-clashdisplay",
+  weight: "400",
+  style: "normal",
+  display: "swap",
+});
+
 export const metadata = {
   title: "Wave — Evolving Brand Design",
   description:
@@ -32,11 +40,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${geistMono.variable} ${tanker.variable} h-full antialiased dark`}
+      className={`${outfit.variable} ${geistMono.variable} ${tanker.variable} ${clash.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col">
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

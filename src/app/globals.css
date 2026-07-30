@@ -7,6 +7,7 @@
 @theme {
   /* Typefaces --------------------------------------------------------- */
   --font-display: var(--font-tanker), "Arial Black", sans-serif;
+  --font-clash: var(--font-clashdisplay), "Arial Black", sans-serif;
   --font-sans: var(--font-outfit), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
@@ -122,11 +123,22 @@ body {
   text-transform: uppercase;
 }
 
+@utility clash-lg {
+  font-family: var(--font-clash);
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 0.92;
+}
+
 @utility display-md {
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 2.5vw, 2.125rem);
   line-height: 0.95;
   text-transform: uppercase;
+}
+@utility clash-md {
+  font-family: var(--font-clashdisplay);
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+  line-height: 0.95;
 }
 
 /* The small technical caps used across nav, meta rows and list items. */
@@ -322,4 +334,65 @@ body{
   bottom: 5%;
   right: 0;
   z-index: 1;
+}
+
+
+.best_cases .col:hover .inner:before {
+  clip-path: inset(0 round 12px);
+  transform: rotate(0);
+}
+
+.best_cases .col .inner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #080d10;
+  clip-path: inset(50% round 12px);
+  transform: rotate(-15deg);
+  transition: clip-path 0.4s ease, transform 0.4s ease;
+  will-change: clip-path, transform;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+/* Your vertical line + grid rules */
+.vertical_line.full {
+  width: 100%;
+  left: 0;
+  transform: unset;
+}
+.isview.fadein {
+  transition-delay: 0.1s;
+}
+.grid.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid .span-4,
+.grid.span-4 {
+  grid-column: span 4;
+}
+.isview:not(.visible) {
+  opacity: 0;
+}
+.vertical_line {
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.isview {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.grid {
+  display: grid;
+}
+.mob-visible {
+  display: none !important;
 }

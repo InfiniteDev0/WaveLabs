@@ -22,7 +22,7 @@ function CarouselButton({ direction, disabled, onClick }) {
         "grid h-11 w-11 place-items-center rounded-full border border-white/15 transition-colors",
         disabled
           ? "cursor-not-allowed text-white/25"
-          : "text-white hover:border-white/40 hover:bg-white/10",
+          : "bg-white text-black hover:border-white/40 hover:bg-white/70",
       )}
     >
       <svg
@@ -54,7 +54,7 @@ function ServiceCard({ service, isActive, onActivate }) {
         // Custom corner shape matching the design:
         // Active card gets a large rounded bottom-left corner (`rounded-bl-[3rem]`)
         isActive
-          ? "rounded-2xl rounded-bl-[3.5rem] bg-violet-200/20 shadow-lg lg:scale-[1.02]"
+          ? "rounded-2xl rounded-bl-[3.5rem] shadow-lg lg:scale-[1.02]"
           : "rounded-2xl lg:hover:scale-[1.01]",
       )}
     >
@@ -66,7 +66,7 @@ function ServiceCard({ service, isActive, onActivate }) {
         sizes="(max-width: 640px) 78vw, (max-width: 1024px) 46vw, 21rem"
         className={cn(
           "object-cover transition-opacity duration-500",
-          isActive ? "opacity-30 mix-blend-overlay" : "opacity-100",
+          isActive ? "" : "opacity-100",
         )}
       />
 
@@ -166,8 +166,9 @@ export function Services() {
             delay={0.08}
             className="mt-16 flex items-center justify-between gap-4"
           >
-            <p className="text-4xl  text-white/90">{servicesIntro.eyebrow}</p>
+            <div>
 
+            </div>
             <div className="flex items-center gap-2">
               <CarouselButton
                 direction={-1}
